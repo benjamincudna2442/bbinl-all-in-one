@@ -23,6 +23,7 @@ def register(bot, custom_command_handler, command_prefixes_list):
             "<code>/say</code> or <code>.say</code> — Text to speech\n"
             "<code>/translate</code> or <code>.translate</code> — Translate texts\n"
             "<code>/info</code> or <code>.info</code> — Get Telegram user/bot/group/channel info\n"
+            "<code>/iban</code> or <code>.iban</code> — generate Iban using 1. germeny - de 2. united kingdom - gb 3. netherlands - nl \n"
             "<code>/reveal</code> or <code>.reveal</code> — Show all commands\n\n"
 
             "🔸 <b>বিশেষ দ্রষ্টব্য:</b> আপনি !, #, ', বা অন্য কোনো চিহ্ন দিয়েও কমান্ড চালাতে পারবেন।\n\n"
