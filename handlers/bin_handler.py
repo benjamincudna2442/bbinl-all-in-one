@@ -64,7 +64,7 @@ async def lookup_bin(bin_number: str) -> dict:
     # 1️⃣ Your Own API
     try:
         async with aiohttp.ClientSession() as session:
-            async with session.get(f"https://cc-gen-api-production.up.railway.app/bin/{bin_to_use}") as res:
+            async with session.get(f"https://cc-gen-test.vercel.app/bin/{bin_to_use}") as res:
                 if res.status == 200:
                     data = await res.json()
                     country = (data.get("country") or "").upper()
