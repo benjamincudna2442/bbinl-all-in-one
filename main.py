@@ -30,7 +30,7 @@ from handlers import (
     iban_handler
 )
 
-BOT_TOKEN = "🍒"
+BOT_TOKEN = "8025427449:AAEWBc6u5SM5vE5LRXYXPAOkjIJVGdCrPaw"
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 
 COMMAND_PREFIXES = list(string.punctuation)
