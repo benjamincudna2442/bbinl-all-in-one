@@ -14,3 +14,4 @@ tgcrypto
 moviepy==1.0.3
 FakeXYZ
 Babel
+pycountry
