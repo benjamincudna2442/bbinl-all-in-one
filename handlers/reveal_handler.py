@@ -4,24 +4,28 @@ def register(bot, custom_command_handler, command_prefixes_list):
     def show_help(message):
         user = message.from_user
         username = f"@{user.username}" if user.username else user.first_name
+
         help_text = (
-            "🛠 Available Commands:\n\n"
-            "`/arise` `.arise` `,arise` — Start the bot\n"
-            "`/gen` `.gen` `,gen` — Generate random cards with BIN info\n"
-            "`/chk` `.chk` `,chk` — Check a single card's status\n"
-            "`/mas` `.mas` `,mas` — Check all generated cards at once (reply to a list)\n"
-            "`/fake` `.fake` `,fake` — get fake address\n"
-            "`/country` `.country` `,country` — check the available country\n"
-            "`/imagine` `.imagine` `,imagine` — generate ai images\n"
-            "`/bgremove` `.bgremove` `,bgremove` — remove image bacground\n"
-            "`/download` `.download` `,download` — download almost any video of yt fb & insta\n"
-            "`/gemini` `.gemini` `,gemini` — talk to gemini\n"
-            "`/gpt` `.gpt` `,gpt` — talk to gpt\n"
-            "`/say` `.say` `,say` —  text to speech\n"
-            "`/translate` `.translate` `,translate` — translate texts\n"
-            "`/info` `.info` `,info` — get telegram user/bot/group/channel info\n"
-            "`/reveal` `.reveal` `,reveal` — Show all the commands\n\n"
-            "<code>/gen &lt;bin&gt; .cnt &lt;amount&gt;</code> — Control quantity\n"
-            f"\n👤 Revealed by: {username}"
+            "🛠 <b>Available Commands:</b>\n\n"
+            "<code>/arise</code> or <code>.arise</code> — Start the bot\n"
+            "<code>/gen</code> or <code>.gen</code> — Generate random cards with BIN info\n"
+            "<code>/chk</code> or <code>.chk</code> — Check a single card's status\n"
+            "<code>/mas</code> or <code>.mas</code> — Check all generated cards at once (reply to a list)\n"
+            "<code>/fake</code> or <code>.fake</code> — Get fake address\n"
+            "<code>/country</code> or <code>.country</code> — Check available countries\n"
+            "<code>/imagine</code> or <code>.imagine</code> — Generate AI images\n"
+            "<code>/bgremove</code> or <code>.bgremove</code> — Remove image background\n"
+            "<code>/download</code> or <code>.download</code> — Download videos from YT, FB & Insta\n"
+            "<code>/gemini</code> or <code>.gemini</code> — Talk to Gemini\n"
+            "<code>/gpt</code> or <code>.gpt</code> — Talk to GPT\n"
+            "<code>/say</code> or <code>.say</code> — Text to speech\n"
+            "<code>/translate</code> or <code>.translate</code> — Translate texts\n"
+            "<code>/info</code> or <code>.info</code> — Get Telegram user/bot/group/channel info\n"
+            "<code>/iban</code> or <code>.iban</code> — generate Iban using 1. germeny - de 2. united kingdom - gb 3. netherlands - nl \n"
+            "<code>/reveal</code> or <code>.reveal</code> — Show all the commands\n\n"
+
+            "🔸 <b>বিশেষ দ্রষ্টব্য:</b> আপনি !, #, , অথবা অন্য যেকোনো চিহ্ন দিয়েও কমান্ড চালাতে পারবেন।\n"
+            f"\n👤 <i>Revealed by:</i> {username}"
         )
+
         bot.reply_to(message, help_text, parse_mode="HTML")
