@@ -69,7 +69,7 @@ def register(bot, custom_command_handler, command_prefixes_list):
 
         # API Call
         try:
-            api_url = f"https://tele-user-info-api-production.up.railway.app/get_user_info?username={identifier}"
+            api_url = f"https://web-production-27cd0.up.railway.app/get_user_info?username={identifier}"
             response = requests.get(api_url, timeout=15)
 
             if response.status_code != 200 or not response.text.strip():
